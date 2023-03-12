@@ -7,24 +7,21 @@ import {
 } from "typeorm";
 
 @Entity()
-export class Contact {
+export class Experiences {
     @PrimaryGeneratedColumn()
     id!: number;
 
     @Column()
     title!: string;
 
-    @Column({default: 'Nathan Rampillon'})
-    name!: string;
-
-    @Column({default: ''})
+    @Column()
     description!: string;
 
-    @Column({default: 'DEVELOPPEUR WEB'})
-    status!: string;
+    @Column()
+    startDate!: string;
 
     @Column()
-    icon!: string;
+    endDate!: string;
 
     @CreateDateColumn()
     createdAt!: Date;
