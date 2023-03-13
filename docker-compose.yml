@@ -33,7 +33,7 @@ services:
       - POSTGRES_HOST=db
   ui:
     build:
-      context: .
+      context: ./client
       dockerfile: /client/Dockerfile
     volumes:
       - ./client:/app/client
