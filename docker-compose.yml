@@ -34,7 +34,7 @@ services:
   ui:
     build:
       context: ./client
-      dockerfile: /client/Dockerfile
+      dockerfile: ./Dockerfile
     volumes:
       - ./client:/app/client
     ports:
