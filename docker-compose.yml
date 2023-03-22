@@ -36,8 +36,8 @@ services:
       context: ./client
       dockerfile: ./Dockerfile
     volumes:
-      - ./client:/app/client
+      - ./client:/app
     ports:
       - "3000:3000"
-    links:
-      - app
+
+
